@@ -7,7 +7,7 @@ import {
     UPDATE_SONG_FAILURE,
     DELETE_SONG_SUCCESS,
     DELETE_SONG_FAILURE,
-    // Add more action types for UPDATE and DELETE
+    
   } from '../actions/songActions';
   
   const initialState = {
@@ -25,7 +25,7 @@ import {
         return { ...state, songs: [...state.songs, action.payload] };
       case ADD_SONG_FAILURE:
         return { ...state, error: action.payload };
-      // Add cases for UPDATE and DELETE
+      
 
       case UPDATE_SONG_SUCCESS:
         return {

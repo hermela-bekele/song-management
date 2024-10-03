@@ -13,7 +13,7 @@ import {
     DELETE_SONG_REQUEST,
     deleteSongSuccess,
     deleteSongFailure,
-  // Add more action types for UPDATE and DELETE
+  
 } from '../actions/songActions';
 
 function* fetchSongs() {
@@ -52,12 +52,12 @@ function* updateSong(action) {
     }
   }
 
-// Add more sagas for UPDATE and DELETE
+
 
 export default function* songSagas() {
   yield takeEvery(FETCH_SONGS_REQUEST, fetchSongs);
   yield takeEvery(ADD_SONG_REQUEST, addSong);
   yield takeEvery(UPDATE_SONG_REQUEST, updateSong);
   yield takeEvery(DELETE_SONG_REQUEST, deleteSong);
-  // Add more watchers for UPDATE and DELETE
+  
 }

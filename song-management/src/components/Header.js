@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <header>
       <h1>Music App</h1>
-      <nav>
+{/*       <nav>
         <button>CREATE</button>
-      </nav>
+      </nav> */}
     </header>
   );
 };
